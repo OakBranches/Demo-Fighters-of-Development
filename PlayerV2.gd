@@ -4,7 +4,7 @@ class_name PlayerV2
 
 # Change as necessary
 var gravity = 800
-var speed = 400
+var speed = 300
 var JUMP = 1200
 var jump_duration = 0.5
 var offset = 0.001
@@ -197,8 +197,10 @@ func control():
 func is_finished(animacao):
 	if animacao != ANIMATOR.current_animation:
 		return false
-	
-	return animation_time + offset >= ANIMATOR.current_animation_length
+	var response = animation_time + offset >= ANIMATOR.current_animation_length
+	if response and (animacao == 'kick_pe'):
+		BUFFER = [0,time,0]
+	return response
 
 # controla as flags de danca
 func dance():
@@ -227,7 +229,7 @@ func jump(delta):
 	elif collided_with == "Chao" and init_jump == 2:
 		init_jump = 3
 		return
-	elif init_jump == 3 and  (is_finished("posjump") or ACTION == 3):
+	elif init_jump == 3 and  (is_finished("posjump") or ACTION != 0):
 		init_jump = 0
 		jump_timer = 0
 		return
@@ -294,7 +296,7 @@ func get_input():
 		if LEFT:
 			velocity.x -= 1
 	
-	if BUFFER[2] == -FRENTE and (BUFFER[0] + BUFFER[2]) == 0:
+	if BUFFER[2] == -FRENTE and (BUFFER[0] + BUFFER[2]) == 0 and not (DOWN or UP ):
 		SP=1
 	else:
 		SP=0
