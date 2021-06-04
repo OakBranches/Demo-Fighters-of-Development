@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://PlayerV2.gd" type="Script" id=1]
 [ext_resource path="res://ground.png" type="Texture" id=2]
@@ -202,7 +202,36 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=16]
-resource_name = "kick2_pe"
+resource_name = "kick2_hxd"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0193476, 0.0385659, 0.0571288, 0.0744115, 0.091054, 0.110257, 0.125619, 0.144822, 0.164665, 0.184508, 0.204992, 0.226755, 0.246598, 0.265801 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344 ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "kick2_jump"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0193476, 0.0385659, 0.0571288, 0.0744115, 0.091054, 0.110257, 0.125619, 0.144822, 0.164665, 0.184508, 0.204992, 0.226755, 0.246598, 0.265801 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299 ]
+}
+
+[sub_resource type="Animation" id=18]
 length = 0.75
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
@@ -217,7 +246,22 @@ tracks/0/keys = {
 "values": [ 255, 256, 257, 258, 259, 260 ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=19]
+resource_name = "kick_jump"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0193476, 0.0385659, 0.0571288, 0.0744115, 0.091054, 0.110257, 0.125619, 0.144822, 0.164665, 0.184508, 0.204992, 0.226755, 0.246598, 0.265801 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284 ]
+}
+
+[sub_resource type="Animation" id=20]
 length = 0.85
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
@@ -232,7 +276,7 @@ tracks/0/keys = {
 "values": [ 105, 106, 107, 108, 109, 110, 111, 112 ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=21]
 length = 0.9
 loop = true
 tracks/0/type = "value"
@@ -248,7 +292,7 @@ tracks/0/keys = {
 "values": [ 60, 61, 62, 63, 64, 65 ]
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=22]
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
@@ -263,7 +307,7 @@ tracks/0/keys = {
 "values": [ 81, 82, 83 ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=23]
 length = 0.15
 loop = true
 step = 0.01
@@ -280,7 +324,52 @@ tracks/0/keys = {
 "values": [ 75, 76, 77, 78, 79 ]
 }
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=24]
+resource_name = "soco2_hxd"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0193476, 0.0385659, 0.0571288, 0.0744115, 0.091054, 0.110257, 0.125619, 0.144822, 0.164665, 0.184508, 0.204992, 0.226755, 0.246598, 0.265801 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359 ]
+}
+
+[sub_resource type="Animation" id=25]
+resource_name = "soco2_jump"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0193476, 0.0385659, 0.0571288, 0.0744115, 0.091054, 0.110257, 0.125619, 0.144822, 0.164665, 0.184508, 0.204992, 0.226755, 0.246598, 0.265801 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329 ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_name = "soco2_pe"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0193476, 0.0385659, 0.0571288, 0.0744115, 0.091054, 0.110257, 0.125619, 0.144822, 0.164665, 0.184508, 0.204992, 0.226755, 0.246598, 0.265801 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374 ]
+}
+
+[sub_resource type="Animation" id=27]
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
@@ -294,7 +383,22 @@ tracks/0/keys = {
 "values": [ 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223 ]
 }
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=28]
+resource_name = "soco_jump"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0193476, 0.0385659, 0.0571288, 0.0744115, 0.091054, 0.110257, 0.125619, 0.144822, 0.164665, 0.184508, 0.204992, 0.226755, 0.246598, 0.265801 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314 ]
+}
+
+[sub_resource type="Animation" id=29]
 length = 0.55
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
@@ -309,7 +413,7 @@ tracks/0/keys = {
 "values": [ 120, 121, 122, 123, 124, 125, 126, 127 ]
 }
 
-[sub_resource type="Animation" id=23]
+[sub_resource type="Animation" id=30]
 length = 0.5
 loop = true
 step = 0.25
@@ -338,8 +442,7 @@ tracks/1/keys = {
 "values": [  ]
 }
 
-[sub_resource type="Animation" id=24]
-resource_name = "walk_hxd"
+[sub_resource type="Animation" id=31]
 length = 0.4
 loop = true
 tracks/0/type = "value"
@@ -408,8 +511,8 @@ shape = SubResource( 4 )
 texture = ExtResource( 4 )
 flip_h = true
 hframes = 15
-vframes = 18
-frame = 255
+vframes = 25
+frame = 300
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerV2/Sprite"]
 anims/block_hxd = SubResource( 5 )
@@ -423,13 +526,20 @@ anims/hxd_end = SubResource( 12 )
 anims/hxnd = SubResource( 13 )
 anims/idle = SubResource( 14 )
 anims/jump = SubResource( 15 )
-anims/kick2_pe = SubResource( 16 )
+anims/kick2_hxd = SubResource( 16 )
+anims/kick2_jump = SubResource( 17 )
+anims/kick2_pe = SubResource( 18 )
 anims/kick_hxd = ExtResource( 3 )
-anims/kick_pe = SubResource( 17 )
-anims/kitty_dance = SubResource( 18 )
-anims/posjump = SubResource( 19 )
-anims/prejump = SubResource( 20 )
-anims/soco_hxd = SubResource( 21 )
-anims/soco_pe = SubResource( 22 )
-anims/walk = SubResource( 23 )
-anims/walk_hxd = SubResource( 24 )
+anims/kick_jump = SubResource( 19 )
+anims/kick_pe = SubResource( 20 )
+anims/kitty_dance = SubResource( 21 )
+anims/posjump = SubResource( 22 )
+anims/prejump = SubResource( 23 )
+anims/soco2_hxd = SubResource( 24 )
+anims/soco2_jump = SubResource( 25 )
+anims/soco2_pe = SubResource( 26 )
+anims/soco_hxd = SubResource( 27 )
+anims/soco_jump = SubResource( 28 )
+anims/soco_pe = SubResource( 29 )
+anims/walk = SubResource( 30 )
+anims/walk_hxd = SubResource( 31 )
